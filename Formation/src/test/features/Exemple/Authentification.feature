@@ -1,14 +1,14 @@
 
 @tag
-Feature: Connecter
-  I want to use this template for my feature file
+Feature: Connexion 
+ En tant que administarteur je veux authentifier
 
   @tag1
-  Scenario: authentification
+  Scenario: Connexion valide
     Given Ouvrir navigateur
     And Ouvrir URL
-    When Sa
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+    When Saisir login
+    And Saisir mot de passe
+    And Cliquer sur Entrer
+    Then Vérifier le nom de profil
+    
